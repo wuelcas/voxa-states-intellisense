@@ -1,8 +1,8 @@
 {
-	"name": "voxa-states-intellisense",
-	"displayName": "Voxa States Intellisense",
-	"description": "Intellisense autocomplete for states used in your Voxa app",
-	"version": "0.0.1",
+	"name": "voxa-intellisense",
+	"displayName": "Voxa Intellisense",
+	"description": "Intellisense autocomplete for your Voxa app",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.45.0"
 	},
@@ -10,17 +10,9 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:voxa-states-intellisense.helloWorld"
+		"workspaceContains:**/src/app/states/*"
 	],
 	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "voxa-states-intellisense.helloWorld",
-                "title": "Hello World"
-			}
-		]
-	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",

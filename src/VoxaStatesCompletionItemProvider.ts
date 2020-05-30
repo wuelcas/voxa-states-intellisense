@@ -21,7 +21,7 @@ export default class VoxaStatesCompletionItemProvider
       this.watcher = workspace.createFileSystemWatcher(
         new RelativePattern(
           workspace.workspaceFolders[0],
-          "**/states/**/*.{ts,js}",
+          "**/src/app/states/**/*.{ts,js}",
         ),
       );
       this.watcher.onDidChange(() => this.onChange());
@@ -53,8 +53,8 @@ export default class VoxaStatesCompletionItemProvider
   }
 
   private async loadStates() {
-    const includePattern = "**/states/**/*.{ts,js}";
-    const excludePattern = "**/states/**/index.{ts,js}";
+    const includePattern = "**/src/app/states/**/*.{ts,js}";
+    const excludePattern = "**/src/app/states/**/index.{ts,js}";
     const filesWithStates = await workspace.findFiles(
       includePattern,
       excludePattern,

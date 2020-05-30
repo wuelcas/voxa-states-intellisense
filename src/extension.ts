@@ -3,7 +3,7 @@ import VoxaStatesCompletionItemProvider from "./VoxaStatesCompletionItemProvider
 
 export function activate(context: ExtensionContext) {
   const completionItemProvider = languages.registerCompletionItemProvider(
-    { scheme: "file", pattern: "**/states/**/*.{ts,js}" },
+    { scheme: "file", pattern: "**/src/app/states/**/*.{ts,js}" },
     new VoxaStatesCompletionItemProvider(),
     ...['"', "'"], // 👈Trigger characters are quotation marks
   );
