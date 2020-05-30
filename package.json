@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"workspaceContains:**/src/app/states/*"
+		"workspaceContains:src/app/states/*"
 	],
 	"main": "./out/extension.js",
 	"scripts": {
