@@ -3,6 +3,11 @@
 	"displayName": "Voxa Intellisense",
 	"description": "Intellisense autocomplete for your Voxa app",
 	"version": "0.1.0",
+	"icon": "images/voxa-logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wuelcas/vscode-voxa-intellisense.git"
+	},
 	"engines": {
 		"vscode": "^1.45.0"
 	},
