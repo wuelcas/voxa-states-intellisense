@@ -4,7 +4,7 @@
   <img src="images/voxa-logo-full-color.png">
 </p>
 
-Code completation for your Voxa app.
+Code completion for your Voxa app.
 
 Currently only supports states autocomplete, will support intents and views in the near future.
 
