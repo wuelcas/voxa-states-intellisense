@@ -2,7 +2,7 @@
 	"name": "voxa-intellisense",
 	"displayName": "Voxa Intellisense",
 	"description": "Intellisense autocomplete for your Voxa app",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"icon": "images/voxa-logo.png",
 	"publisher": "wuelcas",
 	"repository": {
